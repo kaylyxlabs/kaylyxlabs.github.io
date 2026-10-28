@@ -1,23 +1,39 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>DeviceScope privacy policy</title><link rel="icon" href="logo.png"><style>
-:root{--bg:#F3F6FB;--card:#fff;--ink:#0E1B3D;--muted:#5B6B88;--line:#E1E8F2;--link:#1565F0}
-@media (prefers-color-scheme:dark){:root{--bg:#0B1220;--card:#131D31;--ink:#E7EDF8;--muted:#9AA9C2;--line:#24324D;--link:#6EA8FF}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}header img{width:48px;height:48px;border-radius:12px}
-header a{color:var(--ink);text-decoration:none;font-weight:800;font-size:18px}
-article{background:var(--card);border-radius:20px;padding:20px 22px}
-h1{font-size:28px;line-height:1.2;margin:4px 0 8px}h2{font-size:19px;margin:28px 0 8px}
-a{color:var(--link)}em{color:var(--muted)}
-.table{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}
+:root{--bg:#F4F6FA;--card:#fff;--ink:#14213D;--body:#2A3550;--muted:#5B6B88;--line:#E1E8F2;--link:#1565F0;--accent:#1565F0;--chip:#E8F0FE}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1220;--card:#131D31;--ink:#E7EDF8;--body:#C9D3E5;--muted:#9AA9C2;--line:#24324D;--link:#7DB0FF;--accent:#5B9BFF;--chip:#1C2A47}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+#progress{position:fixed;top:0;left:0;right:0;height:4px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0);z-index:20}
+.bar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar div{max-width:760px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:10px}
+.bar img{width:36px;height:36px;border-radius:10px}
+.brand{color:var(--ink);text-decoration:none;font-weight:800;font-size:16px;margin-right:auto}
+.brand small{display:block;font-weight:500;font-size:12px;color:var(--muted)}
+.read{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.home{display:inline-flex;align-items:center;gap:6px;background:var(--chip);color:var(--link);text-decoration:none;font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px}
+main{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+article{background:var(--card);border-radius:20px;padding:24px 26px}
+.doc{font:17px/1.75 Charter,"Bitstream Charter","Iowan Old Style","Palatino Linotype",Georgia,"Noto Serif","Times New Roman",serif;color:var(--body)}
+.doc h1,.doc h2,.doc h3{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink)}
+h1{font-size:30px;line-height:1.2;margin:4px 0 6px}h2{font-size:20px;margin:32px 0 8px}h3{font-size:17px;margin:24px 0 6px}
+.meta{font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--muted);margin:0 0 18px}
+a{color:var(--link)}.doc a{overflow-wrap:anywhere}em{color:var(--muted)}li{margin:4px 0}
+.table{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:15px}
 th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
-footer{color:var(--muted);font-size:13px;margin-top:20px;text-align:center}
-.cards a{display:block;background:var(--card);border-radius:16px;padding:16px 18px;margin:10px 0;text-decoration:none;color:var(--ink);font-weight:600}
+.version{border-top:1px solid var(--line);padding-top:8px}
+.cards{display:grid;gap:10px;margin-top:14px}
+.cards a{display:block;background:var(--card);border-radius:16px;padding:16px 18px;text-decoration:none;color:var(--ink);font-weight:700}
+.cards a span{display:block;font-weight:400;font-size:14px;color:var(--muted)}
+.top{display:inline-block;margin-top:18px;font-size:14px}
+footer{color:var(--muted);font-size:13px;margin-top:24px;text-align:center}
 </style></head>
-<body><main><header><img src="logo.png" alt=""><a href="index.html">DeviceScope · Kaylyx Labs</a></header>
-<article><h1>DeviceScope privacy policy</h1>
-<p><em>Last updated: 28 October 2026</em></p>
+<body><div id="progress" aria-hidden="true"></div>
+<div class="bar"><div><img src="logo.png" alt=""><a class="brand" href="index.html">DeviceScope<small>by Kaylyx Labs</small></a><span class="read" id="read" aria-live="off"></span><a class="home" href="index.html">⌂ Home</a></div></div>
+<main id="top">
+<article class="doc"><h1>DeviceScope privacy policy</h1>
+<p class="meta">Last updated: 28 October 2026 · 4 min read</p>
 <p>DeviceScope ("the app") is made by Kaylyx Labs. This policy explains what the app does with information on your phone.</p>
 <h2>The short version</h2>
 <ul>
@@ -131,6 +147,11 @@ footer{color:var(--muted);font-size:13px;margin-top:20px;text-align:center}
 <h2>Changes</h2>
 <p>If this policy changes, the new version will be posted at this address with a new date.</p>
 <h2>Contact</h2>
-<p>Questions: kaylyxlabs@gmail.com</p></article>
-<footer>© 2026 Kaylyx Labs · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a> · <a href="mailto:kaylyxlabs@gmail.com">kaylyxlabs@gmail.com</a></footer>
-</main></body></html>
+<p>Questions: kaylyxlabs@gmail.com</p><a class="top" href="#top">↑ Back to top</a></article>
+<footer>© 2026 Kaylyx Labs · <a href="index.html">Home</a> · <a href="versions.html">Version history</a> · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a> · <a href="mailto:kaylyxlabs@gmail.com">kaylyxlabs@gmail.com</a></footer>
+</main><script>
+(function(){var b=document.getElementById('progress'),r=document.getElementById('read');
+function u(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight,p=m>0?Math.min(1,h.scrollTop/m):1;
+b.style.transform='scaleX('+p+')';if(r)r.textContent=Math.round(p*100)+'% read';}
+addEventListener('scroll',u,{passive:true});addEventListener('resize',u);u();})();
+</script></body></html>
